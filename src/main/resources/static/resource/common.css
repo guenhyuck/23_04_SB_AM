@@ -217,12 +217,12 @@ html div>form>p>button:hover {
   position: fixed;
   top: 0;
   left: -250px;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.1s ease-in-out;
 }
 
 .content {
   margin-left: 250px;
-  transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.1s ease-in-out;
 }
 
 .sidebar.open {
