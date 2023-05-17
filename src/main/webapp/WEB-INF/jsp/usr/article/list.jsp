@@ -3,7 +3,7 @@
 <c:set var="pageTitle" value="${board.code}" />
 <%@ include file="../common/head.jspf"%>
 <hr />
-<script>
+<!-- <script>
 var backgroundImage = document.querySelector('.background-image');
 var currentURL = window.location.href;
 
@@ -18,7 +18,7 @@ if (currentURL.includes('boardId=1')) {
   // 기본 이미지 설정
   backgroundImage.style.backgroundImage = "url('기본 이미지의 경로')";
 }
-</script>
+</script> -->
 
 <section class="mt-8 text-xl">
 	<div class="container mx-auto px-3">
@@ -108,7 +108,7 @@ if (currentURL.includes('boardId=1')) {
 	 <div class="background-image"></div>
 </section>
 
-<style>
+<!-- <style>
 /* 백그라운드 이미지 */
 .background-images {
   position: fixed;
@@ -146,5 +146,5 @@ if (currentURL.includes('boardId=1')) {
     opacity: 0;
   }
 }
-</style>
+</style> -->
 <%@ include file="../common/foot.jspf"%>

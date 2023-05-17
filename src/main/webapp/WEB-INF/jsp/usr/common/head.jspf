@@ -79,6 +79,7 @@ showNextImage();
 <body>
 		<header>
 				<div class="flex items-center justify-between h-20 container mx-auto">
+				
 						<a href="/" class="flex items-center logo">
 								<img class="logo" src="https://blog.kakaocdn.net/dn/sYIfu/btqwx2UHXws/iYNMv58dIMfX5N9YCw9CKK/img.jpg" alt="로고" />
 								<span></span>
@@ -142,7 +143,6 @@ function (WeatherResult) {
 
 										<span class="nowtime"> </span>
 										<span>현재날씨</span>
-
 										<h3>대전날씨</h3>
 										<h3 class="DajeonIcon"></h3>
 										<a href="/weather/weather/weather">
@@ -267,6 +267,7 @@ function (WeatherResult) {
 												<ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
 
 												<ul class="collapse__menu">
+												<a href="/usr/article/list?boardId=1" " class="collapse__sublink">Notice</a>
 														<a href="/usr/article/list?boardId=1" " class="collapse__sublink">Teast</a>
 														<a href="/usr/article/list?boardId=2" " class="collapse__sublink">Culture</a>
 														<a href="/usr/article/list?boardId=3" " class="collapse__sublink">Rest</a>

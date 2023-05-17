@@ -5,9 +5,11 @@
 
 <div id="map" style="width: 100%; height: 350px;"></div>
 <span>
-	<button onclick="setCenter()">지도 중심좌표 카카오로 이동시키기</button>
+	<button onclick="setCenter()">여기는 시작 위치 찾기 기능</button>
 	<br />
-	<button onclick="panTo()">지도 중심좌표 부드럽게 현충원으로 이동시키기</button>
+	<button onclick="panTo()">여기는 도착 위치 기능</button>
+	<br>
+	<div>여기는 길찾기 시작 and 현재 위치 찾기</div>
 
 
 	<p id="result"></p>
@@ -34,7 +36,7 @@
 		Lolocation = data.body[0].longitude;
 		console.log("data", data);
 		
-		$('.msg-1').html('<div>현충원 정보 불러오기!</div>')
+		$('.msg-1').html('<div>현재 내 위치 (그 지도 아이콘 넣기)</div>')
 		
 	}
 	getData();
@@ -88,7 +90,7 @@
 		var level = map.getLevel();
 		// 지도의 중심좌표를 얻어옵니다 
 		var latlng = map.getCenter();
-		var message = '<p>지도 레벨은 ' + level + ' 이고</p>';
+		var message = '<p>스크롤 크기는 ' + level + ' 입니다</p>';
 		message += '<p>중심 좌표는 위도 ' + latlng.getLat() + ', 경도 '
 				+ latlng.getLng() + '입니다</p>';
 		var resultDiv = document.getElementById('result');

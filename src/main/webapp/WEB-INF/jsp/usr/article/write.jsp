@@ -54,9 +54,12 @@
 							<td>
 								<select class="select select-ghost w-full max-w-xs" name="boardId">
 									<!-- 									<option selected="selected" disabled>게시판을 선택해주세요</option> -->
-									<option value="1">공지사항</option>
-									<option value="2">자유</option>
-									<option value="3">QNA</option>
+									<<c:if test="${rq.admin}">
+									<option value="0">공지사항</option>
+									</c:if>
+									<option value="1">대전의 맛</option>
+									<option value="2">대전의 멋</option>
+									<option value="3">대전의 편의</option>
 								</select>
 							</td>
 						</tr>

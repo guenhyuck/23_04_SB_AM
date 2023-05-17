@@ -8,6 +8,8 @@
 
 </script>
 
+</script>
+
 <div class="container">
 <figure class="snip1584"><img class="img" src="https://t3.ftcdn.net/jpg/03/11/19/40/240_F_311194050_0ILCHahjCX7A8QwfptKx7yRw6fOxWgUN.jpg" alt="sample87"/>
   <figcaption>
@@ -34,6 +36,84 @@
     <h5>클릭하세요</h5>
   </figcaption><a href="/usr/home/main"></a>
 </figure>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"대전 문화, 세상과 소통하다"</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <a href="https://www.instagram.com/daejeon_official/" class="fa fa-apple" id="apple"></a>
+    <a href="https://twitter.com/DreamDaejeon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter" id="twitter"></a>
+    <a href="https://www.facebook.com/daejeonstory/?locale=ko_KR" class="fa fa-facebook-square" id="facebook"></a>
+  </div>
+</body>
+
+<style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #18191f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#apple,
+#twitter,
+#github,
+#facebook {
+  font-size: 8em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+</style>
+
+</html>
+
 </div>
 
 <style>
