@@ -10,11 +10,7 @@ $('select[data-value]').each(function(index, el) {
 
 
 
-$('.popup').click(function() {
-	//	$('.layer').css('display','block');
-	$('.layer').show();
-	$('.layer-bg').show();
-});
+
 
 $('.close-btn').click(function() {
 	//	$('.layer').css('display','none');

@@ -3,11 +3,38 @@
 </main>
 </body>
 <div class="flex items-center justify-center">
-  <ul>
-  </ul>
+		<ul>
+		</ul>
 </div>
 
 
 
+		<div class="bottomCon">
+						<div class="icon_bts">
+								<a href="#">
+										<i class="fab fa-instagram"></i>
+										인스타
+								</a>
+								<a href="#">
+										<i class="fab fa-facebook"></i>
+										페북
+								</a>
+								<a href="#">
+										<i class="fas fa-home"></i>
+										공홈
+								</a>
+						</div>
+
+				<hr class="line">
+				<ul class="information_2">
+						<li>대전광역시</li>
+						<li>(35242) 대전광역시 서구 둔산로 100 (둔산동)</li>
+						<li>콜센터 042-120 (365일)</li>
+						<li>평일 08:00~21:00 토·공휴일 09:00~18:00</li>
+
+				</ul>
+				<p>(c) DAEJEON METROPOLITAN CITY. ALL RIGHTS RESERVED.</p>
+		</div>
+</div>
 
 </html>

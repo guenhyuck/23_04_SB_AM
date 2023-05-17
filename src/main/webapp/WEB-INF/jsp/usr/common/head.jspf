@@ -79,7 +79,7 @@ showNextImage();
 <body>
 		<header>
 				<div class="flex items-center justify-between h-20 container mx-auto">
-				
+
 						<a href="/" class="flex items-center logo">
 								<img class="logo" src="https://blog.kakaocdn.net/dn/sYIfu/btqwx2UHXws/iYNMv58dIMfX5N9YCw9CKK/img.jpg" alt="로고" />
 								<span></span>
@@ -121,6 +121,33 @@ $(document).ready(function () {
     $('.nowtime').append(currentTime);
 });
 </script>
+
+
+
+<script>
+  // 버튼을 클릭하면 팝업창을 생성하고 내용을 불러옵니다.
+  $('.popup').click(function() {
+    // 팝업창을 생성하고 크기와 위치를 조정합니다.
+    var popupWindow = window.open('', 'popupWindow', 'width=600, height=400, left=100, top=100');
+    
+    // AJAX 요청을 사용하여 파일 내용을 불러옵니다.
+    $.ajax({
+      url: '/weather/weather/weather.jsp',
+      success: function(data) {
+        // 팝업창에 내용을 채웁니다.
+        popupWindow.document.write(data);
+      }
+    });
+    
+    // 팝업창이 차단되지 않도록 포커스를 줍니다.
+    if (window.focus) {
+      popupWindow.focus();
+    }
+  });
+</script>
+
+
+
 										<script>
 //제이쿼리사용
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Daejeon,kr&appid=9dfed2f326354341b5cfd541cb39e05d&units=metric',
@@ -145,7 +172,7 @@ function (WeatherResult) {
 										<span>현재날씨</span>
 										<h3>대전날씨</h3>
 										<h3 class="DajeonIcon"></h3>
-										<a href="/weather/weather/weather">
+										<a href="/weather/weather/weather" class="popup">
 												<h3 class="DajeonNowtemp">현재기온:</h3>
 										</a>
 										<a href="/weather/weather/weather">
@@ -154,8 +181,12 @@ function (WeatherResult) {
 										<a href="/weather/weather/weather">
 												<h3 class="DajeonHightemp">최대기온:</h3>
 										</a>
+										<!-- 상세보기 버튼을 만듭니다. -->
+										<div class="popup text-2xl inline">상세보기</div>
 
-										<span>상세보기</span>
+										<!-- 팝업창을 담을 공간을 생성합니다. -->
+										<div id="popupContainer"></div>
+										
 
 								</div>
 								<li class="hover:underline">
@@ -213,7 +244,7 @@ function (WeatherResult) {
 												</a>
 										</li>
 								</c:if>
-				
+
 
 								<c:if test="${rq.admin}">
 										<li class="hover:underline">
@@ -267,14 +298,14 @@ function (WeatherResult) {
 												<ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
 
 												<ul class="collapse__menu">
-												<a href="/usr/article/list?boardId=1" " class="collapse__sublink">Notice</a>
+														<a href="/usr/article/list?boardId=1" " class="collapse__sublink">Notice</a>
 														<a href="/usr/article/list?boardId=1" " class="collapse__sublink">Teast</a>
 														<a href="/usr/article/list?boardId=2" " class="collapse__sublink">Culture</a>
 														<a href="/usr/article/list?boardId=3" " class="collapse__sublink">Rest</a>
 												</ul>
 										</div>
 
-									
+
 
 										<div href="#" class="nav__link collapse">
 												<ion-icon name="people-outline" class="nav__icon"></ion-icon>
@@ -291,10 +322,10 @@ function (WeatherResult) {
 
 												</ul>
 										</div>
-											<a href="/usr/home/APITest4" class="nav__link">
+										<a href="/usr/home/APITest4" class="nav__link">
 												<ion-icon name="navigate-outline"></ion-icon>
-												
-												<span class="nav_name" >길찾기</span>
+
+												<span class="nav_name">길찾기</span>
 										</a>
 										<c:if test="${!rq.logined }">
 												<a href="/usr/member/login" class="nav__link">
@@ -316,11 +347,16 @@ function (WeatherResult) {
 
 
 
+
+
+
 		<!-- IONICONS -->
 		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 		<!-- JS -->
 		<script src="assets/js/main.js"></script>
 </body>
+
+  
 <style>
 /* GOOGLE FONTS */
 @import
@@ -329,7 +365,7 @@ function (WeatherResult) {
 
 /* VARIABLES CSS */
 :root {
-	--nav--width: 92px;
+	--nav--width: 88px;
 	/* Colores */
 	--first-color: #0c5df4;
 	--bg-color: #12192c;
@@ -487,7 +523,17 @@ a {
 	transform: rotate(180deg);
 	transition: .5s;
 }
+
+.icon_bts div {
+	display: flex;
+	align-items: center;
+}
+
+.icon_bts i {
+	margin-right: 5px;
+}
 </style>
+
 </html>
 
 
