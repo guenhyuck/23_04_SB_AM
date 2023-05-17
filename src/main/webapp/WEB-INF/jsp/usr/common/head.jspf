@@ -165,31 +165,38 @@ function (WeatherResult) {
         '.png" alt="' + WeatherResult.weather[0].description + '"/>'
 
     $('.DajeonIcon').html(weathericonUrl);
+        
+        
+        
 });
 </script>
 
 										<span class="nowtime"> </span>
 										<span>현재날씨</span>
-										<h3>대전날씨</h3>
-										<h3 class="DajeonIcon"></h3>
-										<a href="/weather/weather/weather" class="popup">
+									
+	
+										
+<!-- 										실시간아이콘
+										<h3 class="DajeonIcon"></h3> -->
+										
+										
+										
+										<a href="/weather/weather/weather">
 												<h3 class="DajeonNowtemp">현재기온:</h3>
 										</a>
-										<a href="/weather/weather/weather">
+										
+					<!-- 					<a href="/weather/weather/weather">
 												<h3 class="DajeonLowtemp">최저기온:</h3>
 										</a>
 										<a href="/weather/weather/weather">
 												<h3 class="DajeonHightemp">최대기온:</h3>
-										</a>
-										<!-- 상세보기 버튼을 만듭니다. -->
-										<div class="popup text-2xl inline">상세보기</div>
-
-										<!-- 팝업창을 담을 공간을 생성합니다. -->
-										<div id="popupContainer"></div>
+										</a> -->
 										
 
 								</div>
+								<h3 class="DajeonIcon"></h3>
 								<li class="hover:underline">
+								
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>홈으로</span>
 										</a>

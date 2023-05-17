@@ -176,4 +176,15 @@ html div>form>p>button:hover {
 .content.open {
   margin-left: 0;
 }
-/* before 메인화면 css */
+/* 날씨 css */
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h3>img {
+  background-color: #afafaf;
+  animation: blink 3s infinite;
+}

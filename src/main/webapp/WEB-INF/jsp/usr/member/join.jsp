@@ -163,4 +163,42 @@
 		<button class="btn-text-link btn btn-active btn-ghost" type="button" onclick="history.back();">뒤로가기</button>
 	</div>
 </section>
+
+ <!-- SIGN IN -->
+      <div class="col align-items-center flex-col sign-in">
+        <div class="form-wrapper align-items-center">
+          <div class="form sign-in">
+            <div class="input-group">
+              <i class='bx bxs-user'></i>
+              <input type="text" placeholder="Username">
+            </div>
+            <div class="input-group">
+              <i class='bx bxs-lock-alt'></i>
+              <input type="password" placeholder="Password">
+            </div>
+            <button>
+              Sign in
+            </button>
+            <p>
+              <b>
+                Forgot password?
+              </b>
+            </p>
+            <p>
+              <span>
+                Don't have an account?
+              </span>
+              <b onclick="toggle()" class="pointer">
+                Sign up here
+              </b>
+            </p>
+          </div>
+        </div>
+        <div class="form-wrapper">
+    
+        </div>
+      </div>
+      <!-- END SIGN IN -->
+
+
 <%@ include file="../common/foot.jspf"%>
