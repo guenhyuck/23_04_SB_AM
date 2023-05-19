@@ -40,26 +40,26 @@
 		</a>
 		<a href="https://www.youtube.com/channel/UCzIgmDjE0lFDu2IhEF_ewOA">
 				<i class="fa-brands fa-youtube"></i>
-				유트브
+				유튜브
 		</a>
 </div>
 
 
 <div class="main">
 		<a href="/" class="card_image">
-				<img src="https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png">
+				<img class="first_image" src="https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png">
 		</a>
 		<ul class="cards">
 				<li class="cards_item">
 						<div class="card">
 								<div class="flex card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://www.wellnessnculture.co.kr/news/photo/202110/3989_6566_5950.jpg">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
-										<p class="card_text">"대전, 문화의 새로운 스테이지"</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<p class="card_text">"대전, 쉼터"</p>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -67,12 +67,12 @@
 						<div class="card">
 								<div class="card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://img.freepik.com/free-photo/rainbow-fountain-show-at-expo-bridge-in-south-korea_335224-491.jpg?w=1380&t=st=1684468890~exp=1684469490~hmac=570872144e073c8a2c8d4fbcf91eaabf8456474ae42cb46274dcafb13f962cb1">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
 										<p class="card_text">"대전, 문화로 만나는 새로운 세상"</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -80,12 +80,12 @@
 						<div class="card">
 								<div class="card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://img.freepik.com/premium-vector/different-kinds-of-city-and-intercity-public-transport-set-transportation-illustration-car-bus-and-truck-icons_263016-380.jpg">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
 										<p class="card_text">"대전, 문화의 향연을 느끼다"</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -93,12 +93,12 @@
 						<div class="card">
 								<div class="card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://ak-d.tripcdn.com/images/1i61q2215as5snj2o8B1D.jpg?proc=source/trip">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
-										<p class="card_text">"대전 문화, 세상과 소통하다"</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<p class="card_text">"대전 문화, 맛으로 느끼기"</p>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -106,12 +106,12 @@
 						<div class="card">
 								<div class="card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://cdn.cctoday.co.kr/news/photo/202203/2159314_591447_2750.jpg">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
-										<p class="card_text">"대전 문화, 그림 같은 순간을 만들다"</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<p class="card_text">"대전 문화, 체험하며 즐기기"</p>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -119,12 +119,12 @@
 						<div class="card">
 								<div class="card_image">
 										<img
-												src="https://i.namu.wiki/i/O7Rd8b_LoQX4ufQbTmv2a_b0-OVHAa6Uz3FLfE_UE0rLJz-ruEvT_1l2rQpTFfTuaaOeOm12Fz8nKxzRvyW_iQ.svg">
+												src="https://mblogthumb-phinf.pstatic.net/MjAyMjEyMDlfMTkx/MDAxNjcwNTM3NjE3MzYz.49mbTxeEDY6aDt5b3X1gq_GSYBM1tf74y2YSzOujhlEg.Bn47zvOg1D5XP3T5irnP5whTAq1bTTU0RtEySR0ADSgg.JPEG.first_seogu/%EC%9E%A5%ED%83%9C%EC%82%B0%EC%9E%90%EC%97%B0%ED%9C%B4%EC%96%91%EB%A6%BC2.jpg?type=w800">
 								</div>
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
-										<p class="card_text">한줄 설명란</p>
-										<a href="/" class="btn card_btn">~ 가기</a>
+										<p class="card_text">대전문화</p>
+										<a href="/" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -133,8 +133,18 @@
 
 
 <style>
+/* 커서 */
+body {
+  cursor: url("https://www.sungsimdangmall.co.kr/data/sungsimdang/goods/sungsimdang/other/IMG001.png"), auto;
+}
 
 /* Design */
+
+
+}
+
+
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -263,4 +273,35 @@ img {
 .icon_bts i {
 	margin-right: 5px;
 }
+
+
+	@keyframes blink {
+		0% { color: red; }
+		50% { color: black; }
+		100% { color: red; }
+	}
+
+	.icon_bts a:hover {
+		animation: blink 1s infinite;
+	}
+	.div .card_image>img{
+	-webkit-animation: pulse 1.5s infinite;
+	
+	}
+.main .card_image .first_image{
+  border-radius: 45px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  }
+
+.main .card_image .first_image:hover{
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-14px);
+}
+
+
 </style>

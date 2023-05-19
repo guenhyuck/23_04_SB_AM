@@ -5,7 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class UsrAPITestController {
-
+  
+	
+	/* @RequestMapping: 요청 URL과 해당 메서드를 매핑합니다. */
+	
 	@RequestMapping("/usr/home/APITest")
 	public String APITest() {
 		return "usr/home/APITest";

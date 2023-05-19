@@ -22,6 +22,6 @@
             , mapOptions );
    }
 </script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq3dzxLVXjDuYYbkgoEC-xu7fejhiFd_ccallback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq3dzxLVXjDuYYbkgoEC-xu7fejhiFd_c&callback=myMap"></script>
 
 <%@ include file="../common/foot.jspf"%>

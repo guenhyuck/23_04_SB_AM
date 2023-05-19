@@ -41,5 +41,16 @@
 		<p>(c) DAEJEON METROPOLITAN CITY. ALL RIGHTS RESERVED.</p>
 </div>
 </div>
+<style>
+	@keyframes blink {
+		0% { color: red; }
+		50% { color: black; }
+		100% { color: red; }
+	}
+
+	.icon_bts a:hover {
+		animation: blink 1s infinite;
+	}
+</style>
 
 </html>

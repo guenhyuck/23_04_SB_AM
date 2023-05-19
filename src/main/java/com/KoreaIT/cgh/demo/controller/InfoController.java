@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.KoreaIT.cgh.demo.vo.Rq;
 
+
+//설명에 대한 컨트롤 클래스
+//컨트롤러 이노테이션으로 컨트롤러를 선언
 @Controller
 public class InfoController {
 	
@@ -14,7 +17,11 @@ public class InfoController {
 		this.rq = rq;
 	}
 	
-
+	
+	/* @RequestMapping: 요청 URL과 해당 메서드를 매핑합니다. */
+	
+	/* 클라이언트 요청에 usr/info/info , info2, info3,info4로 반환합니다 */
+ 
 	@RequestMapping("/usr/info/info")
 	public String showInfo() {
 		rq.run();

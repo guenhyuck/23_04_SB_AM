@@ -5,13 +5,15 @@
 	namespace="com.KoreaIT.cgh.demo.repository.ArticleRepository">
 
 
-
+<!--     입력한 id값의 게시글을 삭제하는 쿼리입니다 -->
 
 	<delete id="deleteArticle">
 		DELETE FROM
 		article
 		WHERE id = #{id}
 	</delete>
+	
+<!-- 	게시글을 수정하는 쿼리입니다 -->
 
 	<update id="modifyArticle">
 		UPDATE article
@@ -22,6 +24,8 @@
 		</set>
 		WHERE id = #{id}
 	</update>
+<!-- 	
+	 마지막 게시글 id를 조회하는 쿼리입니다 -->
 
 	<select id="getLastInsertId" resultType="int">
 		SELECT LAST_INSERT_ID()

@@ -38,6 +38,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
         
 		
 		//로그인 필요
+		//게시판 이용에 대한 로그인 권한
 		ir = registry.addInterceptor(needLoginInterceptor);
 		ir.addPathPatterns("/usr/article/write");
 		ir.addPathPatterns("/usr/article/doWrite");
@@ -45,6 +46,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 		ir.addPathPatterns("/usr/article/doModify");
 		ir.addPathPatterns("/usr/article/doDelete");
 		
+		//회원 이용에 대한 로그인 권한
 		ir.addPathPatterns("/usr/member/mypage");
 		ir.addPathPatterns("/usr/member/checkPw");
 		ir.addPathPatterns("/usr/member/doCheckPw");
@@ -53,12 +55,16 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 		ir.addPathPatterns("/usr/member/delete");
 		ir.addPathPatterns("/usr/member/doDelete");
 		
+		//댓글 이용에 대한 로그인 권한
 		ir.addPathPatterns("/usr/reply/doWrite");
 		ir.addPathPatterns("/usr/reply/modify");
 		ir.addPathPatterns("/usr/reply/doModify");
 		ir.addPathPatterns("/usr/reply/doDelete");
-
-		ir.addPathPatterns("/usr/reactionPoint/doGoodReaction");
+		
+		
+       		
+		//좋아요 이용에 대한 로그인 권한 
+ 		ir.addPathPatterns("/usr/reactionPoint/doGoodReaction");
 		ir.addPathPatterns("/usr/reactionPoint/doBadReaction");
 		ir.addPathPatterns("/usr/reactionPoint/doCancelGoodReaction");
 		ir.addPathPatterns("/usr/reactionPoint/doCancelBadReaction");
