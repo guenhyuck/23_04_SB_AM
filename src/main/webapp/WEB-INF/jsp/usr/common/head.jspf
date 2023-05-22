@@ -28,6 +28,21 @@
 <script src="/resource/common.js" defer="defer"></script>
 
 
+<!-- 날씨 팝업 -->
+<script>
+function openPopup() {
+	  window.open('/weather/weather/weather', '팝업', 'width=500,height=400');
+	}
+	
+	
+$(document).ready(function() {
+  $("body").on("click", function(e) {
+    if (!$(e.target).closest(".container").length) {
+      window.close();
+    }
+  });
+});
+</script>
 
 <!-- 배경이미지 -->
 <script>
@@ -186,10 +201,10 @@ function (WeatherResult) {
 										
 										
 										
-										<a href="/weather/weather/weather">
+										
 												<h3 class="DajeonNowtemp">현재기온:</h3>
-										</a>
-										<div class="popup">상세보기</div>
+										
+										<button onclick="openPopup()">상세보기</button>
 					<!-- 					<a href="/weather/weather/weather">
 												<h3 class="DajeonLowtemp">최저기온:</h3>
 										</a>

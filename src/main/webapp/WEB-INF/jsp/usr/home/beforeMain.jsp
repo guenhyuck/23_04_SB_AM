@@ -25,6 +25,8 @@
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
+
+<!-- 배경색 -->
 <div class="gradient">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <rect width="150%" height="150%" x="-65%" y="-65%" fill="url(#gradient1a)"></rect>
@@ -74,7 +76,9 @@
   z-index: -1;
 }
 </style>
-/
+<!-- 배경색끝 -->
+
+<!-- sns아이콘 -->
 
 <div class="icon_bts">
 		<a href="https://www.instagram.com/daejeon_official/">
@@ -94,7 +98,10 @@
 				유튜브
 		</a>
 </div>
+<!-- sns아이콘 끝 -->
 
+
+<!-- 카드 이미지 -->
 
 <div class="main">
 		<a href="/" class="card_image">
@@ -185,6 +192,7 @@
 				</li>
 		</ul>
 </div>
+<!-- 카드 이미지 끝-->
 
     <div class="slider fe">
         <div class="image">

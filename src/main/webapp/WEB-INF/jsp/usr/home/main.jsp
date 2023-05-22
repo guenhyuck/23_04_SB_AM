@@ -74,7 +74,6 @@ next.addEventListener("click", scrollNext);
 <div class="layer-bg"></div>
 <div class="layer">
 		<div class="flex justify-between">
-				<div class="text-2xl">POPUP</div>
 				<div class="close-btn">
 						
 						<div></div>
@@ -98,7 +97,7 @@ next.addEventListener("click", scrollNext);
   </label>
   
   <div class="container">
-    <h2 class="title">Welcome to the Snuggle Zone</h2>
+    <h2 class="title">Welcome to Daejeon</h2>
     <div class="carousel-viewport">
       <ul class="items">
         <li class="item">

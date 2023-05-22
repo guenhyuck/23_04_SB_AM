@@ -8,6 +8,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<title>날씨 팝업</title>
+<!-- https://parkjh7764.tistory.com/11 미세먼지 참고 -->
+
+
 <script>
 $(document).ready(function() {
   $.ajax({
