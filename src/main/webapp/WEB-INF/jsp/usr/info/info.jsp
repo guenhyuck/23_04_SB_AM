@@ -28,6 +28,7 @@
 <link rel="shortcut icon" href="/resource/favicon.ico" />
 <script src="/resource/common.js" defer="defer"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -51,10 +52,10 @@
     <table>
         <thead>
             <tr>
-                <th>식당 이름</th>
-                <th>주소</th>
-                <th>대표 음식</th>
-                <th>영업 시간</th>
+                <th>식당이름</th>
+                <th>식당주소</th>
+                <th>대표음식</th>
+                <th>영업시간</th>
             </tr>
         </thead>
         <tbody id="restaurantTableBody">
@@ -64,17 +65,22 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: '/src/main/resources/getrestrnt.json', // JSON 파일의 경로
+                url: 'https://apis.data.go.kr/6300000/openapi2022/restrnt/getrestrnt',
                 dataType: 'json',
                 type: 'GET',
+                data: {
+                    serviceKey: 'LoGiR/OBTqIJAVGIVOlUyeqKpNoHrBcwxk1uDmd72JiN4LdaqZBVCQcBp6qrgK3M6g+Sh/ZM0vWPEz3y3pgQOQ==',
+                    pageNo: 1,
+                    numOfRows: 10
+                },
                 success: function(data) {
-                    var restaurantItems = data.response.body.items;
+                    var restaurantItems = data.response.body.items.item;
                     var tbody = $("#restaurantTableBody");
 
                     $.each(restaurantItems, function(index, item) {
                         var tr = $("<tr></tr>");
                         var nameTd = $("<td></td>").text(item.restrntNm);
-                        var addressTd = $("<td></td>").text(item.restrntAddr);
+                        var addressTd = $("<td></td>").text(item.restrntAddr + " " + item.restrntDtlAddr);
                         var foodTd = $("<td></td>").text(item.rprsFod);
                         var timeTd = $("<td></td>").text(item.salsTime);
 
@@ -88,5 +94,8 @@
             });
         });
     </script>
+    
+
 </body>
 </html>
+

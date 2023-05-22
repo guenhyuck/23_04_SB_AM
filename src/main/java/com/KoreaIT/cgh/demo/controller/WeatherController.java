@@ -1,6 +1,7 @@
 package com.KoreaIT.cgh.demo.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.KoreaIT.cgh.demo.vo.Rq;
@@ -50,5 +51,11 @@ public class WeatherController {
 		rq.run();
 		return "/weather/weather/weather2";
 	}
+	
+	
+	  @GetMapping("/weather")
+	    public String showWeatherPopup() {
+	        return "weather"; // 팝업 창에 대한 JSP/Thymeleaf/HTML 파일의 이름을 반환합니다.
+	    }
 
 }

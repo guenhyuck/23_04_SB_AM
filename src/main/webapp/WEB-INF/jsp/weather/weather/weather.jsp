@@ -8,7 +8,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<<script type="text/javascript">
+<script type="text/javascript">
 <script>
 $(document).ready(function() {
   $.ajax({
@@ -72,9 +72,9 @@ function (WeatherResult) {
     });
 
     $("body").on("click", function(e) {
-      if (!$(e.target).closest(".container").length) {
-        window.location.href = "/";
-      }
+        if (!$(e.target).closest(".container").length) {
+          window.close();
+        }
     });
   });
 </script>
@@ -89,70 +89,18 @@ feather.replace()
     <div class="weather-gradient">
       <div class="date-container">
         <h2 class="nowtime"></h2>
-        <span class="date-day">15 Jan 2019</span>
+        <span class="date-day"></span>
         <i class="location-icon" data-feather="map-pin"></i>
         <span class="location">대전, KR</span>
       </div>
       <div class="weather-container">
         <i class="weather-icon" data-feather="sun"></i>
         <h1 class="DajeonNowtemp">현재기온:</h1>
-        <h3 class="weather-desc">Sunny</h3>
+        <h3 class="weather-desc"></h3>
       </div>
     </div>
   </div>
-  <div class="info-side">
-    <div class="today-info-container">
-      <div class="today-info">
-        <div class="precipitation">
-          <span class="title">PRECIPITATION</span>
-          <span class="value">0 %</span>
-          <div class="clear"></div>
-        </div>
-        <div class="humidity">
-          <span class="title">습도</span>
-          <span class="value">34 %</span>
-          <div class="clear"></div>
-        </div>
-        <div class="wind">
-          <span class="title">풍속</span>
-          <span class="value">0 km/h</span>
-          <div class="clear"></div>
-        </div>
-      </div>
-    </div>
-    <div class="week-container">
-      <ul class="week-list">
-        <li class="active">
-          <i class="day-icon" data-feather="sun"></i>
-          <span class="day-name">화요일</span>
-          <span class="day-temp">29°C</span>
-        </li>
-        <li>
-          <i class="day-icon" data-feather="cloud"></i>
-          <span class="day-name">수요일</span>
-          <span class="day-temp">21°C</span>
-        </li>
-        <li>
-          <i class="day-icon" data-feather="cloud-snow"></i>
-          <span class="day-name">목요일</span>
-          <span class="day-temp">08°C</span>
-        </li>
-        <li>
-          <i class="day-icon" data-feather="cloud-rain"></i>
-          <span class="day-name">금요일</span>
-          <span class="day-temp">19°C</span>
-        </li>
-        <div class="clear"></div>
-      </ul>
-    </div>
-    <div class="location-container">
-      <button class="location-button">
-        <i data-feather="map-pin"></i>
-        <span>지역 바꾸기</span>
-      </button>
-    </div>
-  </div>
-</div>
+
 <div class="overlay"></div>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');

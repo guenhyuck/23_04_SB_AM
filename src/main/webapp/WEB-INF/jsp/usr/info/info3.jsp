@@ -34,7 +34,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>교통량임</title>
+    <title>Trafic</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         table {
@@ -47,14 +47,14 @@
     </style>
 </head>
 <body>
-    <h1>Restaurant List</h1>
+    <h1>Trafic List</h1>
     <table>
         <thead>
             <tr>
-                <th>식당 이름</th>
-                <th>주소</th>
-                <th>대표 음식</th>
-                <th>영업 시간</th>
+                <th>지하철 </th>
+                <th>버스</th>
+                <th>승용차</th>
+                <th>시간대 별 사용량</th>
             </tr>
         </thead>
         <tbody id="restaurantTableBody">

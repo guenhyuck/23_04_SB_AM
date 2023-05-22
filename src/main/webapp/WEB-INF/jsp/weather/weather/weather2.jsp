@@ -33,8 +33,9 @@ $(document).ready(function () {
 
         var month = now.getMonth() + 1;
         var date = now.getDate();
+        var year = now.getYeat();
 
-        return month + '월' + date + '일';
+        return year + '년'+ month + '월' + date + '일';
     }
 
     var currentTime = convertTime();

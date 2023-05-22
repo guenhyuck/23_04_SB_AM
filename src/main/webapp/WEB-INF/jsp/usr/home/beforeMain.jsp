@@ -49,6 +49,10 @@
 		<a href="/" class="card_image">
 				<img class="first_image" src="https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png">
 		</a>
+		
+
+		
+		
 		<ul class="cards">
 				<li class="cards_item">
 						<div class="card">
@@ -179,6 +183,12 @@ img {
 	vertical-align: middle;
 }
 
+.main .cards_item .card img {
+ height: 350px;
+ width: 450px;
+
+}
+
 .btn {
 	color: #ffffff;
 	padding: 0.8rem;
@@ -223,6 +233,7 @@ img {
 }
 
 .card {
+
 	background-color: white;
 	border-radius: 0.25rem;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -254,6 +265,7 @@ img {
 }
 
 .card_image {
+
 	display: flex;
 	justify-content: center;
 }
@@ -302,6 +314,11 @@ img {
   color: #fff;
   transform: translateY(-14px);
 }
+
+
+/* 로고 글씨부 생각만 */
+
+
 
 
 </style>
