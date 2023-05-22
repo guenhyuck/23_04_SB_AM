@@ -4,8 +4,41 @@
 <%@ include file="../common/head.jspf"%>
 <!-- 제이쿼리 불러오기 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- 슬라이드 효과자리 -->
+ 
+<script>
+    $(document).ready(function() {
+      var delay = 2000; // 이미지가 보여지는 시간 (밀리초)
+      var fadeDuration = 1000; // 이미지가 서서히 나타나고 사라지는 시간 (밀리초)
+      var logoItems = $(".logoList li"); // 로고 항목들
+      var currentItemIndex = 0; // 현재 보여지고 있는 로고 항목의 인덱스
+
+      // 로고 항목을 순서대로 보여줌
+      function showNextLogoItem() {
+        var nextItemIndex = (currentItemIndex + 1) % logoItems.length;
+
+        $(logoItems[currentItemIndex]).fadeOut(fadeDuration, function() {
+          $(logoItems[nextItemIndex]).fadeIn(fadeDuration);
+          currentItemIndex = nextItemIndex;
+
+          setTimeout(showNextLogoItem, delay);
+        });
+      }
+
+      // 첫 번째 로고 항목 보여주기 시작
+      $(logoItems[currentItemIndex]).fadeIn(fadeDuration, function() {
+        setTimeout(showNextLogoItem, delay);
+      });
+    });
+  </script>
+
+
 
 <hr />
+
+
 
 
 <div>링크 주소 자리야</div>
@@ -15,13 +48,13 @@
 <div>레이아웃 자리야</div>
 
 
-<div class="popup text-2xl inline">레이아웃 슬라이드쇼 할꺼야</div>
+<div class="popup text-2xl inline">레이아웃 슬라이드쇼 할꺼야 클릭하면 이동함</div>
 <div class="layer-bg"></div>
 <div class="layer">
 		<div class="flex justify-between">
 				<div class="text-2xl">POPUP</div>
 				<div class="close-btn">
-						<div></div>
+						
 						<div></div>
 				</div>
 		</div>
@@ -89,16 +122,16 @@
 
 <div class="container">
 
-
-		<a href="">얘네 크기 늘릴꺼야</a>
+<div class="cslider"></div>
+		<a href="">얘네 크기 늘리고 슬라이드쇼 해</a>
 
 		<a href="/usr/home/APITest4" class="fa-solid fa-map-location-dot">일단지도</a>
 		
-		<a href="/usr/info/info" class="fa-solid fa-car">일단맛집</a>
+		<a href="/usr/info/info" class="fa-solid fa-bowl-food">일단맛집</a>
 		
-		<a href="/usr/info/info3" class="fa-solid fa-restroom">일단 교통량</a>
+		<a href="/usr/info/info3" class="fa-solid fa-car">일단 교통량</a>
 		
-		<a href="/usr/info/info4" class="fa-solid fa-restroom">일단 숙박</a>
+		<a href="/usr/info/info4" class="fa-solid fa-bed">일단 숙박</a>
 		
        
 
@@ -120,22 +153,37 @@
 	margin-right: 20px; /* 원하는 간격 설정 */
 }
 
-ul.logoList {
-	display: flex;
-	justify-content: center;
-	gap: 20px; /* 원하는 간격 설정 */
-}
 
-ul.logoList li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
 
-.logoList img {
-	width: 400px; /* 원하는 크기로 조정 */
-	height: 400px; /* 원하는 크기로 조정 */
-}
+
+/* 슬라이더 부 */
+/* bgi */
+
+.logoList li {
+      display: none;
+    }
+    .logoList li.active {
+      display: block;
+    }
+    .logoList img {
+      width: 600px; /* 이미지 크기 설정 */
+      height: 600px;
+    }
+    .dotContainer {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #555;
+    }
 </style>
 <%@ include file="../common/foot.jspf"%>

@@ -41,8 +41,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- 추가적인 의존성 -->
+    <!-- 구글 -->
 
+<dependency>
+    <groupId>com.google.maps</groupId>
+    <artifactId>google-maps-services</artifactId>
+    <version>0.18.0</version>
+</dependency>
 
 
 		 

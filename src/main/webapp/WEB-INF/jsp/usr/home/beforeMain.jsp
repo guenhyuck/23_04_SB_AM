@@ -25,6 +25,57 @@
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
+<div class="gradient">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <rect width="150%" height="150%" x="-65%" y="-65%" fill="url(#gradient1a)"></rect>
+      <rect width="200%" height="200%" x="10%" y="-80%" fill="url(#gradient1b)"></rect>
+      <rect width="200%" height="150%" x="-50%" y="30%" fill="url(#gradient1c)"></rect>
+      <defs>
+        <radialGradient id="gradient1a">
+          <stop offset="0%" stop-color="#F2C9C9">
+            <animate attributeName="stop-color" values="#F2C9C9;#FFFFFF;#DCD5F5;#FFE7C1;#FFFFFF;#FFE7C1;#F2C9C9" dur="20s" repeatCount="indefinite">
+            </animate>
+          </stop>
+          <stop offset="100%" stop-color="#FFFFFF"></stop>
+        </radialGradient>
+        <radialGradient id="gradient1b">
+          <stop offset="0%" stop-color="#CBEBF0">
+            <animate attributeName="stop-color" values="#CBEBF0;#DCD5F5;#FFFFFF;#CBEBF0;#DCD5F5;#FFFFFF;#CBEBF0" dur="20s" repeatCount="indefinite">
+            </animate>
+          </stop>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+        </radialGradient>
+        <radialGradient id="gradient1c">
+          <stop offset="0%" stop-color="#FFFFFF">
+            <animate attributeName="stop-color" values="#FFFFFF;#FFE7C1;#F2C9C9;#FFFFFF;#CBEBF0;#F2C9C9;#FFFFFF" dur="20s" repeatCount="indefinite">
+            </animate>
+          </stop>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+<style>
+.gradient {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index:  -2;
+}
+.gradient svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+/
+
 <div class="icon_bts">
 		<a href="https://www.instagram.com/daejeon_official/">
 				<i class="fab fa-instagram"></i>
@@ -135,6 +186,25 @@
 		</ul>
 </div>
 
+    <div class="slider fe">
+        <div class="image">
+            <input type="radio" name="input" id="img1" checked>
+            <input type="radio" name="input" id="img2">
+            <input type="radio" name="input" id="img3">
+            <input type="radio" name="input" id="img4">
+
+            <img src="https://a.top4top.io/p_19435rd9e1.jpg" alt="" class="m1">
+            <img src="https://b.top4top.io/p_19431v2lm2.jpg" alt="" class="m2">
+            <img src="https://c.top4top.io/p_19433ew8l3.jpg" alt="" class="m3">
+            <img src="https://d.top4top.io/p_1943hmvlk4.jpg" alt="" class="m4">
+        </div>
+        <div class="label">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
 
 <style>
 /* 커서 */
@@ -244,7 +314,7 @@ img {
 
 .card_content {
 	padding: 1rem;
-	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+ 	background: #2ea5e5;
 }
 
 .card_title {
@@ -311,14 +381,96 @@ img {
 .main .card_image .first_image:hover{
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
+/*   color: #fff; */
   transform: translateY(-14px);
 }
 
 
-/* 로고 글씨부 생각만 */
+/* bgi */
 
+.slider {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
 
+.slider {
+    width: 600px;
+    height: 450px;
+    margin: 100px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.slider .image {
+    position: relative;
+}
+
+.slider .image img {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation-name: slider;
+    animation-duration: 15s;
+}
+
+.slider .image input {
+    display: none;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+  
+}
+
+.label label {
+    width: 50px;
+    height: 20px;
+    border: 3px solid #222;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.label label:hover {
+    background-color: #222;
+}
+
+#img1:checked~.m1 {
+    opacity: 1;
+}
+
+#img2:checked~.m2 {
+    opacity: 1;
+}
+
+#img3:checked~.m3 {
+    opacity: 1;
+}
+
+#img4:checked~.m4 {
+    opacity: 1;
+}
 
 
 </style>
