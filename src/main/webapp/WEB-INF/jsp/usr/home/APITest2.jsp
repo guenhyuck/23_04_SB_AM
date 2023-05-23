@@ -403,7 +403,7 @@
         box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.14), 0 1px 10px rgba(0, 0, 0, 0.12);
         height: 256px;
         position: absolute;
-        width: 360px;
+       
       }
 
       .commutes-modal .content {
@@ -649,14 +649,14 @@
             <use href="#commutes-initial-icon"/>
           </svg>
           <div class="description">
-            <h1 class="heading">Estimate commute time</h1>
-            <p>See travel time and directions for places nearby</p>
+            <h1 class="heading">경로 알아보기</h1>
+            <p>주변 장소에 대한 여행 시간과 경로를 조회합니다</p>
           </div>
           <button class="add-button" autofocus>
             <svg aria-label="Add Icon" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
               <use href="#commutes-add-icon"/>
             </svg>
-            <span class="label">Add destination</span>
+            <span class="label">경로 추가</span>
           </button>
         </div>
 
@@ -667,7 +667,7 @@
               <svg aria-label="Add Icon" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
                 <use href="#commutes-add-icon"/>
               </svg>
-              <div class="label">Add destination</div>
+              <div class="label">경로 추가</div>
             </button>
           </div>
           <button class="left-control hide" data-direction="-1" aria-label="Scroll left">
@@ -687,9 +687,9 @@
     <div class="commutes-modal-container">
       <div class="commutes-modal" role="dialog" aria-modal="true" aria-labelledby="add-edit-heading">
         <div class="content">
-          <h2 id="add-edit-heading" class="heading">Add destination</h2>
+          <h2 id="add-edit-heading" class="heading">경로 추가</h2>
           <form id="destination-form">
-            <input type="text" id="destination-address-input" name="destination-address" placeholder="Enter a place or address" autocomplete="off" required>
+            <input type="text" id="destination-address-input" name="destination-address" placeholder="주소를 입력해주세요" autocomplete="off" required>
             <div class="error-message" role="alert"></div>
             <div class="travel-modes">
               <input type="radio" name="travel-mode" id="driving-mode" value="DRIVING" aria-label="Driving travel mode">
@@ -720,16 +720,16 @@
           </form>
           <div class="modal-action-bar">
             <button class="delete-destination-button hide" type="reset">
-              Delete
+              삭제
             </button>
             <button class="cancel-button" type="reset">
-              Cancel
+              취소
             </button>
             <button class="add-destination-button" type="button">
-              Add
+              추가
             </button>
             <button class="edit-destination-button hide" type="button">
-              Done
+              완료
             </button>
           </div>
         </div>
