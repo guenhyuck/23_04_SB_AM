@@ -154,7 +154,7 @@ next.addEventListener("click", scrollNext);
 <div class="cslider"></div>
 		<a href="">얘네 크기 늘리고 슬라이드쇼 해</a>
 
-		<a href="/usr/home/APITest4" class="fa-solid fa-map-location-dot">일단지도</a>
+		<a href="/usr/home/APITest2" class="fa-solid fa-map-location-dot">일단지도</a>
 		
 		<a href="/usr/info/info" class="fa-solid fa-bowl-food">일단맛집</a>
 		

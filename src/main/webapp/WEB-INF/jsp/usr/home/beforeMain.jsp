@@ -121,7 +121,7 @@
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
 										<p class="card_text">"대전, 쉼터"</p>
-										<a href="/" class="btn card_btn">~ 바로 가기</a>
+										<a href="/usr/info/info4" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -147,7 +147,7 @@
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
 										<p class="card_text">"대전, 문화의 향연을 느끼다"</p>
-										<a href="/" class="btn card_btn">~ 바로 가기</a>
+										<a href="/usr/info/info3" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
@@ -160,7 +160,7 @@
 								<div class="card_content">
 										<h2 class="card_title">틀잡기</h2>
 										<p class="card_text">"대전 문화, 맛으로 느끼기"</p>
-										<a href="/" class="btn card_btn">~ 바로 가기</a>
+										<a href="/usr/info/info" class="btn card_btn">~ 바로 가기</a>
 								</div>
 						</div>
 				</li>
