@@ -256,11 +256,35 @@
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>문화</span>
 										</a>
+										<ul class="z-10 ">
+												<li class="hover:underline">
+														<a href="#">무슨무슨 문화의 ~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">무슨무슨 문화의 ~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">무슨무슨 문화의 ~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">무슨무슨 문화의 ~</a>
+												</li>
+										</ul>
 								</li>
 								<li class="hover:underline">
 
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>역사</span>
+												<ul class="z-10 ">
+														<li class="hover:underline">
+																<a href="#">무슨무슨 역사의 ~</a>
+														</li>
+														<li class="hover:underline">
+																<a href="#">무슨무슨 역사의 ~</a>
+														</li>
+														<li class="hover:underline">
+																<a href="#">무슨무슨 역사의 ~</a>
+												</ul>
 										</a>
 								</li>
 								<li class="hover:underline">
@@ -268,12 +292,40 @@
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>축제/행사</span>
 										</a>
+										<ul class="z-10 ">
+												<li class="hover:underline">
+														<a href="#">이달의 축제~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">언제 하는 행사인지</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">~~~~~~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">무슨무슨~~ ~</a>
+												</li>
+										</ul>
 								</li>
 								<li class="hover:underline">
 
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>음식/숙박/편의</span>
 										</a>
+										<ul class="z-10 ">
+												<li class="hover:underline">
+														<a href="#">모범 음식점 ~~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">우수 숙박업소~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">공공 화장실~~</a>
+												</li>
+												<li class="hover:underline">
+														<a href="#">대충교통 이용등</a>
+												</li>
+										</ul>
 								</li>
 								<li class="hover:underline">
 										<a class="h-full px-3 flex items-center" href="/usr/article/write">
@@ -329,7 +381,8 @@
 
 
 		<!-- 토글 사이드바 -->
-		
+
+
 		
 <html lang="en">
 <head>
