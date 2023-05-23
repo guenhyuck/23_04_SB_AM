@@ -162,6 +162,7 @@ function (WeatherResult) {
 });
 </script>
 
+
 										<span class="nowtime"> </span>
 										<span>현재날씨</span>
 									
@@ -185,9 +186,20 @@ function (WeatherResult) {
 										
 
 								</div>
+								
 								<h3 class="DajeonIcon"></h3>
+				
 								<li class="hover:underline">
 								
+																				<li class="">
+																
+								
+										
+<a class="h-full px-3 flex items-center" href="https://corona.daejeon.go.kr/" target="_blank">
+										<i class="fa-solid fa-circle-exclamation" style="color: #e22a1d;"></i>
+												<span class="hover:underline" style="color:red;">코로나19</span>
+										</a>
+								</li>
 										<a class="h-full px-3 flex items-center" href="/">
 												<span>홈으로</span>
 										</a>
