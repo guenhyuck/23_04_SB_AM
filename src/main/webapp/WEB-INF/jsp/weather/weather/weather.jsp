@@ -24,6 +24,8 @@ $(document).ready(function() {
   });
 });
 </script>
+
+
 <script>
 //오늘 날짜출력
 $(document).ready(function () {
@@ -42,8 +44,10 @@ $(document).ready(function () {
     $('.nowtime').append(currentTime);
 });
 </script>
+
+
 <script>
-//제이쿼리사용
+// 기온 출력 함수
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Daejeon,kr&appid=9dfed2f326354341b5cfd541cb39e05d&units=metric',
 function (WeatherResult) {
     //기온출력
@@ -55,7 +59,9 @@ function (WeatherResult) {
 });
 </script>
 
-</script>
+
+
+<!-- 다른곳 클릭하면 팝업창이 닫히도록 -->
 
 <script>
   $(document).ready(function() {
@@ -102,6 +108,9 @@ feather.replace()
   </div>
 
 <div class="overlay"></div>
+
+<!-- css부분 -->
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
@@ -348,10 +357,4 @@ body {
 }
 
 </style>
-
-
-
-
-
-
 

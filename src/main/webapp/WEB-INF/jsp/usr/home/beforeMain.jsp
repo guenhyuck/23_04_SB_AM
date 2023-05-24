@@ -57,6 +57,9 @@
       </defs>
     </svg>
   </div>
+  
+<!--   배경 css 부 -->
+  
 <style>
 .gradient {
   position: fixed;
@@ -77,6 +80,12 @@
 }
 </style>
 <!-- 배경색끝 -->
+
+
+
+
+
+
 
 <!-- sns아이콘 -->
 
@@ -101,16 +110,14 @@
 <!-- sns아이콘 끝 -->
 
 
+
+
 <!-- 카드 이미지 -->
 
 <div class="main">
 		<a href="/" class="card_image">
 				<img class="first_image" src="https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png">
 		</a>
-		
-
-		
-		
 		<ul class="cards">
 				<li class="cards_item">
 						<div class="card">
@@ -215,17 +222,15 @@
     </div>
 
 <style>
+
+
+
 /* 커서 */
 body {
   cursor: url("https://www.sungsimdangmall.co.kr/data/sungsimdang/goods/sungsimdang/other/IMG001.png"), auto;
 }
 
 /* Design */
-
-
-}
-
-
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -394,7 +399,9 @@ img {
 }
 
 
-/* bgi */
+
+
+/* bgi 테스트용 . 화면 밑에 구성 되어있음 */
 
 .slider {
     padding: 0;

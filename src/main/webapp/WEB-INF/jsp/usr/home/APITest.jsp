@@ -2,20 +2,21 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="pageTitle" value="API Test" />
 
-<script>
-	const API_KEY = 'yIGj7lJBJIcshuAYg2rAxIOkX81W14YthO8jdaPqMNOxbp52KQZaUPkf83%2Bs27TMVMLnNvSzzRoUmbAuju%2F30A%3D%3D';
-	async function getData() {
-		const url = 'http://apis.data.go.kr/1790387/covid19CurrentStatusKorea/covid19CurrentStatusKoreaJason?serviceKey='
-				+ API_KEY;
-		const response = await
-		fetch(url);
-		const data = await
-		response.json();
-		console.log("data", data);
-	}
-	getData();
+<%@ include file="../common/head.jspf"%>
+
+
+<div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dcc19040796a95905fe29ac26a2ee949"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 </script>
 
-<%@ include file="../common/head.jspf"%>
 
 <%@ include file="../common/foot.jspf"%>
