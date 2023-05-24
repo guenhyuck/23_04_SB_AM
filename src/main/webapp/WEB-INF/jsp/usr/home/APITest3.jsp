@@ -4,14 +4,9 @@
 
 <%@ include file="../common/head.jspf"%>
 
-<div id="map" style="width: 100%; height: 350px;"></div>
 <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9cb7a158e6102f18491a3f7057d13c6a&libraries=services,clusterer,drawing"></script>
-
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9cb7a158e6102f18491a3f7057d13c6a"></script>
- <title>키워드로 장소검색하고 목록으로 표출하기</title>
-    <style>
+<style>
 .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
 .map_wrap {position:relative;width:100%;height:500px;}
@@ -288,4 +283,6 @@ function removeAllChildNods(el) {
     }
 }
 </script>
+
+
 <%@ include file="../common/foot.jspf"%>
