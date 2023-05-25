@@ -409,7 +409,7 @@
 
 												</ul>
 										</div>
-										<a href="/usr/home/APITest2" class="nav__link">
+										<a href="/usr/home/APITest3" class="nav__link">
 												<ion-icon name="navigate-outline"></ion-icon>
 
 												<span class="nav_name">길찾기</span>

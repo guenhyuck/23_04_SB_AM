@@ -301,6 +301,8 @@ img {
 .cards_item {
 	display: flex;
 	padding: 1rem;
+	border-radius: 33%;
+	
 }
 
 @media ( min-width : 40rem) {
@@ -327,7 +329,7 @@ img {
 
 .card_content {
 	padding: 1rem;
- 	background: #2ea5e5;
+ 	background: #53B597;
 }
 
 .card_title {
